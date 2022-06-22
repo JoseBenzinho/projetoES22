@@ -44,9 +44,6 @@ public class DashBoardView extends JFrame
                 false);
         var currentOptionTitle = viewManager.CreateLabel("Gestão de Veículos",22,"Inter Light", colorManager.getColor("DarkText"), 830, 50,410,20, false, false);
 
-        var buttonLogout = viewManager.CreateButton("Logout",610,20, 830, 50, 50,colorManager.getColor("DarkText"),colorManager.getColor("DarkText"));
-
-
         var usernameTitle = viewManager.CreateLabel("LinuxTech",22,"Inter Bold", colorManager.getColor("DarkText"),830,50,147,20
                 , false, false);
 
@@ -65,7 +62,7 @@ public class DashBoardView extends JFrame
                 48,24,
                 colorManager.getColor("AccentBackgroundColor"), 48,24,297,110, false);
 
-        var logoutButton = viewManager.CreateButton("Logout",610,20,130,25,18,colorManager.getColor("DarkText"),colorManager.getColor("LightBackground"));
+        var logoutButton = viewManager.CreateButton("Logout",670,20,130,25,15,colorManager.getColor("DarkText"),colorManager.getColor("LightBackground"));
 
         panel.add(title);
         panel.add(logoutButton);
@@ -74,6 +71,8 @@ public class DashBoardView extends JFrame
         panel.add(transactionTitle);
         panel.add(showTransactionBtn);
         panel.add(currentOptionTitle);
+
+        logoutButton.addActionListener(e -> System.exit(0));
     }
 
     private void ChangeCustomOptionsPanel(JPanel panel, String selection) {

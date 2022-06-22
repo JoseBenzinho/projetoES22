@@ -19,10 +19,10 @@ public class UImodels {
     public LinkedList<String> getGestaoPeçasOptions() {
         var GestaoPeçasOptions = new LinkedList<String>();
         GestaoPeçasOptions.add("Registar novas Peças");
+        GestaoPeçasOptions.add("Alterar Peças");
         GestaoPeçasOptions.add("Registar uso de Peça Manutenção");
         GestaoPeçasOptions.add("Registar Aquisição de Peça");
         GestaoPeçasOptions.add("Transferir Peça");
-        GestaoPeçasOptions.add("Gastos de Manutenção Carro");
         return new LinkedList<>(GestaoPeçasOptions);
     }
 
